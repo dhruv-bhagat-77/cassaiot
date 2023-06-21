@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  menuFolded: boolean = false;
 
+  openMenu(value: any) {
+    this.menuFolded = !this.menuFolded;
+    // this.dialog.open(HeaderComponent, {})
+  }
 }

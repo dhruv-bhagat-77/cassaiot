@@ -7,15 +7,11 @@ import {HeaderComponent} from "../header/header.component";
   styleUrls: ['./main-layout.component.css']
 })
 export class MainLayoutComponent implements OnInit{
-  menuFolded: boolean = false;
+
   constructor() {
   }
 
   ngOnInit() :void {
 
-  }
-  openMenu(value: any) {
-    this.menuFolded = !this.menuFolded;
-    // this.dialog.open(HeaderComponent, {})
   }
 }
