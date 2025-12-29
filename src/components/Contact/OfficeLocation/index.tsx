@@ -16,7 +16,7 @@ const Location = () => {
                         <h2 className="text-secondary dark:text-white max-w-219 sm:text-[40px] sm:leading-[3.4rem] text-[28px] leading-[2.25rem] font-bold">Parth Joshi</h2>
                     </div>
                     <div className="col-span-3">
-                        <p className="sm:text-2xl text-xl text-secondary dark:text-darktext font-normal max-w-266 leading-10">Parth Joshi</p>
+                        <p className="sm:text-2xl text-xl text-secondary dark:text-darktext font-normal max-w-266 leading-10">201, Sai Darshan Apartment, Ashabaugh, Navsari - 396445</p>
                     </div>
                     <div className="col-span-3">
                         <Link href="mailto:part@cassaiot.com" className="sm:text-2xl text-xl text-secondary dark:text-SereneSky font-medium underline hover:dark:text-white hover:text-RegalBlue">parth@cassaiot.com</Link>

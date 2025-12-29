@@ -8,25 +8,36 @@ const publicPaths = [
   '/fonts',
   '/favicon.ico',
   '/api',
-  '/coming-soon', // This is now handled by the rewrite
+  '/coming-soon',
+  '/contact',
+  '/signin',
+  '/signup'
+];
+
+// List of paths that should be directly accessible without any checks
+const directAccessPaths = [
+  '/coming-soon',
+  '/contact',
+  '/signin',
+  '/signup'
 ];
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
   // Check if the current path should be excluded from rewriting
-  const isExcludedPath = publicPaths.some(publicPath => 
-    pathname.startsWith(publicPath) || 
-    pathname === '/contact'
+  const isPublicPath = publicPaths.some(publicPath => 
+    pathname === publicPath || 
+    pathname.startsWith(publicPath + '/')
   );
 
-  // If it's the root path or a public path, continue
-  if (isExcludedPath) {
-    // If it's the coming-soon page, serve it directly
-    if (pathname === '/coming-soon') {
-      return NextResponse.next();
-    }
-    // For all other public paths, continue normally
+  // If it's a public path, allow access
+  if (isPublicPath) {
+    return NextResponse.next();
+  }
+
+  // For direct access paths, serve them directly
+  if (directAccessPaths.some(path => pathname === path)) {
     return NextResponse.next();
   }
 
