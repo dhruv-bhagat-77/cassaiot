@@ -10,7 +10,7 @@ const Footer: FC = () => {
                     <div>
                         <Link href="/">
                             <Image
-                                src="/images/footer/footer-logo-white.svg"
+                                src="/images/footer/footer-logo-cassaiot.svg"
                                 alt="logo"
                                 width={0}
                                 height={0}
@@ -127,7 +127,7 @@ const Footer: FC = () => {
                                 className="hover:text-white"
                                 target="_blank"
                             >
-                                NextJs Templates
+                                Dhruv Bhagat
                             </Link>
                         </p>
                         <p className="text-base font-normal text-PaleCerulean">
@@ -140,26 +140,6 @@ const Footer: FC = () => {
                                 ThemeWagon
                             </Link>
                         </p>
-                    </div>
-                    <div className="col-span-7 grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-                        <p className="text-xl text-PaleCerulean font-normal col-span-4">
-                            Subscribe Newsletter
-                        </p>
-                        <div className="w-full col-span-8">
-                            <form className="newsletter-form bg-white dark:bg-transparent flex rounded-md justify-end overflow-hidden rounded-tl-lg rounded-bl-lg">
-                                <input
-                                    type="email"
-                                    placeholder="Email address*"
-                                    className="p-4 text-base border-0 rounded-md outline-0 w-[calc(100%_-_137px)] flex dark:bg-midnight_text dark:text-white dark:rounded-none dark:w-full dark:bg-darkmode"
-                                />
-                                <button
-                                    type="submit"
-                                    className="btn btn-1 hover-filled-slide-down bg-RegalBlue"
-                                >
-                                    <span className="!border-0 !text-white">Subscribe</span>
-                                </button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>

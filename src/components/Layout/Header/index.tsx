@@ -216,11 +216,11 @@ const Header: React.FC = () => {
             </svg>
           </button>
         </div>
-        {/* <nav className="flex flex-col items-start p-4">
+        <nav className="flex flex-col items-start p-4">
           {headerData.map((item, index) => (
             <MobileHeaderLink key={index} item={item} />
           ))}
-          <div className="mt-4 flex flex-col space-y-4 w-full">
+          {/* <div className="mt-4 flex flex-col space-y-4 w-full">
             <Link
               href="#"
               className="bg-transparent border border-solid border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
@@ -241,8 +241,8 @@ const Header: React.FC = () => {
             >
               Sign Up
             </Link>
-          </div>
-        </nav> */}
+          </div> */}
+        </nav>
       </div>
             {/* Successsful Login Alert */}
             <div className={`fixed top-6 end-1/2 translate-x-1/2 z-50 ${authDialog?.isSuccessDialogOpen == true ? "block" : "hidden"}`}>

@@ -3,7 +3,7 @@
 const basePath = "";
 const nextConfig = {
 	// Remove static export for middleware to work
-	// output: "export",
+	output: "standalone",
 	
 	// ensure exported pages end up as folders (helps GitHub Pages routing)
 	trailingSlash: true,

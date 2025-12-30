@@ -24,7 +24,7 @@ export default function ComingSoon() {
               Back to Home
             </Link>
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:parth@cassaiot.com" 
               className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 text-center"
             >
               Contact Us

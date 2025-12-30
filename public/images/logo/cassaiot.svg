@@ -1,0 +1,53 @@
+<svg
+  width="192"
+  height="40"
+  viewBox="0 0 192 33"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    .brand {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      fill: #1f4fd8;
+    }
+    .tagline {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9px;
+      fill: #000000;
+    }
+    .sub {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8px;
+      fill: #000000;
+      letter-spacing: 0.5px;
+    }
+    .line {
+      stroke: #1f4fd8;
+      stroke-width: 1.5;
+    }
+  </style>
+
+  <!-- Main Brand -->
+  <text x="96" y="16" text-anchor="middle" class="brand" font-size="20">
+    CASS
+  </text>
+
+  <!-- Registered Mark -->
+  <text x="128" y="8" font-size="12" fill="#1f4fd8">®</text>
+
+  <!-- Lines -->
+  <line x1="10" y1="22" x2="60" y2="22" class="line"/>
+  <line x1="129" y1="22" x2="182" y2="22" class="line"/>
+
+  <!-- Tagline -->
+  <text x="96" y="25" text-anchor="middle" class="tagline">
+    Easy Your Work
+  </text>
+
+  <!-- Sub text -->
+  <text x="10" y="35" class="sub">
+    AN SRG ENTERPRISE
+  </text>
+</svg>
+

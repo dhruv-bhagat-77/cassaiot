@@ -9,7 +9,7 @@ import Upcoming from '@/components/Home/Upcoming';
 import Testimonials from '@/components/Home/Testimonials';
 import TicketSection from '@/components/Home/TicketSection';
 export const metadata: Metadata = {
-  title: "Symposium",
+  title: "Cassaiot",
 };
 
 export default function Home() {
