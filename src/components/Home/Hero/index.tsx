@@ -1,111 +1,63 @@
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
-    return (
-        <section className="dark:bg-darkmode">
-            <div className="container">
-                <div className="grid lg:grid-cols-12 grid-cols-1 items-center gap-30">
-                    <div className="col-span-6">
-                        <p
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                            data-aos-duration="1000"
-                            className="relative z-0  inline-block text-primary text-lg font-bold before:absolute before:content-[''] before:bg-primary/20  before:w-full before:h-2 before:-z-1 dark:before:-z-1 before:bottom-0"
-                        >
-                            Starts on 16 June 2024
-                        </p>
-                        <h1
-                            className="py-4"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                            data-aos-duration="1000"
-                        >
-                            User Experience Conference
-                        </h1>
-                        <p
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                            data-aos-duration="1000"
-                            className="text-xl text-SlateBlueText dark:text-opacity-80 font-normal md:pb-14 pb-6"
-                        >
-                            We offer you a new generation of task and project management
-                            system. Plan, manage and track.
-                        </p>
-                        <div className="flex items-center md:justify-normal lg:justify-center justify-start flex-wrap gap-4">
-                            <Link
-                                href="/"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
-                                className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
-                            >
-                                <span className="!flex !items-center gap-14">
-                                    <i className="bg-[url('/images/hero/tickets.svg')] bg-no-repeat bg-contain w-6 h-6 inline-block"></i>
-                                    Buy access pass
-                                </span>
-                            </Link>
-                            <Link
-                                href="/"
-                                data-aos="fade-up"
-                                data-aos-delay="600"
-                                data-aos-duration="1000"
-                                className="btn_outline btn-2 hover-outline-slide-down group"
-                            >
-                                <span className="!flex !items-center gap-14">
-                                    <i className="bg-[url('/images/hero/calander.svg')] bg-no-repeat bg-contain w-6 h-6 inline-block group-hover:bg-[url('/images/hero/calander-hover-white.svg')]"></i>
-                                    Add to calendar
-                                </span>
-                            </Link>
-                        </div>
-                    </div>
-                    <div
-                        data-aos="fade-left"
-                        data-aos-delay="200"
-                        data-aos-duration="1000"
-                        className="col-span-6  lg:flex hidden items-center gap-3"
-                    >
-                        <div className="bg-ElectricAqua relative rounded-tl-166 rounded-br-166 w-full">
-                            <Image
-                                src="/images/hero/john.png"
-                                alt="hero"
-                                width={0}
-                                height={0}
-                                quality={100}
-                                layout="responsive"
-                                sizes="100vh"
-                                className="w-full h-full"
-                            />
-                            <div className="bg-yellow-300 rounded-22 shadow-hero-box py-4 px-5 absolute top-16 -left-20">
-                                <p className="text-lg font-bold text-yellow-900">John Karter</p>
-                                <p className="text-base font-medium text-yellow-900 text-center">
-                                    4.8 rating
-                                </p>
-                            </div>
-                        </div>
-                        <div className="bg-primary relative rounded-tr-166 rounded-bl-166 w-full mt-32">
-                            <Image
-                                src="/images/hero/maria.png"
-                                alt="hero"
-                                width={0}
-                                height={0}
-                                quality={100}
-                                layout="responsive"
-                                sizes="100vh"
-                                className="w-full h-full"
-                            />
-                            <div className="bg-Aquamarine rounded-22 shadow-hero-box py-4 px-5 absolute top-24 -right-20 xl:inline-block hidden">
-                                <p className="text-lg font-bold text-green-800">Mariya John</p>
-                                <p className="text-base font-medium text-green-800 text-center">
-                                    4.9 rating
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <section className="relative w-full overflow-hidden dark:bg-dark">
+      {/* Video Background with Overlay */}
+      <div className="relative h-screen w-full">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/images/hero/home.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        {/* Content Overlay */}
+        <div className="absolute inset-0 flex items-center">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl">
+              <h1 
+                className="text-5xl md:text-6xl lg:text-7xl font-bold text-white dark:text-gray-100 mb-6 leading-tight"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
+                WE ARE WORKING ON <span className="text-red-600 dark:text-red-500">EDGE INNOVATION</span><br/>
+                SO THE WORLD 
+              </h1>
+              <p 
+                className="text-2xl text-white/90 dark:text-gray-200 mb-8 max-w-2xl"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
+                Can seat back and relax because <br/> we are awake to solve your problems.
+              </p>
+              <Link 
+                href="/explore" 
+                className="inline-flex items-center gap-2 bg-white dark:bg-gray-100 hover:bg-primary/90 text-black hover:text-white font-bold py-3 px-8 rounded-full transition duration-300"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
+                EXPLORE NOW
+                <i className="bg-[url('/images/hero/arrow-right.svg')] bg-no-repeat bg-contain w-5 h-5 inline-block"></i>
+              </Link>
             </div>
-        </section>
-    );
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
