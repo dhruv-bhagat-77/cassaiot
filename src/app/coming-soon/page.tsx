@@ -34,7 +34,7 @@ export default function ComingSoon() {
         
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} Symposium. All rights reserved.
+            © {new Date().getFullYear()} Cassaiot. All rights reserved.
           </p>
         </div>
       </div>

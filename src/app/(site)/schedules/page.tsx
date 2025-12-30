@@ -8,7 +8,7 @@ import Testimonial from "@/components/SharedComponent/Testimonial";
 import Testimonials from "@/components/Home/Testimonials";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Schedules | Symposium",
+  title: "Schedules | Cassaiot",
 };
 
 const page = () => {

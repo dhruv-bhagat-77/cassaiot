@@ -1,16 +1,16 @@
-# symposium-nextjs
+# Cassaiot-nextjs
 #### Preview
 
- - [Demo](https://themewagon.github.io/symposium-nextjs/)
+ - [Demo](https://themewagon.github.io/Cassaiot-nextjs/)
 
 #### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/symposium-nextjs/)
+ - [Download from ThemeWagon](https://themewagon.com/themes/Cassaiot-nextjs/)
 
 ## Getting Started
 
 1. Clone Repository
 ```
-git clone https://github.com/themewagon/symposium-nextjs.git
+git clone https://github.com/themewagon/Cassaiot-nextjs.git
 ```
 2. Install Dependencies
 ```

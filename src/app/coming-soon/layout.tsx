@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Coming Soon | Symposium',
+  title: 'Coming Soon | Cassaiot',
 };
 
 interface ComingSoonLayoutProps {
