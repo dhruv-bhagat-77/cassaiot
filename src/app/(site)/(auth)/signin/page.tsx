@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Sign In | Symposium",
+    "Sign In | Cassaiot",
 };
 
 const SigninPage = () => {

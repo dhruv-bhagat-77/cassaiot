@@ -75,7 +75,7 @@ const ContactInfo = () => {
                         </div>
                     </div>
                     <div className="md:pt-28 pt-11 md:pb-28 pb-16">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.389589059!2d72.91193707602527!3d20.93686419092699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7d97f8deb2b%3A0x804df37a5cece1de!2sSai%20Darshan%20Apartment!5e0!3m2!1sen!2sin!4v1767000545427!5m2!1sen!2sin" width="1114" height="477" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg w-full"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119312.60429207227!2d72.84904181272744!3d20.85112581656914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f754628acb2f%3A0x4b60cbc7b5b5a8b1!2sCASS%20AIOT%20Private%20Limited!5e0!3m2!1sen!2sin!4v1767092466625!5m2!1sen!2sin" width="1114" height="477" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg w-full"></iframe>
                     </div>
                 </div>
                 <div className="border-b border-solid  dark:border-dark_border"></div>

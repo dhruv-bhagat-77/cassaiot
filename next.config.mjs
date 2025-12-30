@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-// const basePath = "/symposium-nextjs";
+// const basePath = "/Cassaiot-nextjs";
 const basePath = "";
 const nextConfig = {
 	// Remove static export for middleware to work

@@ -130,16 +130,6 @@ const Footer: FC = () => {
                                 Dhruv Bhagat
                             </Link>
                         </p>
-                        <p className="text-base font-normal text-PaleCerulean">
-                            Distributed by {" "}
-                            <Link
-                                href="https://themewagon.com/"
-                                className="hover:text-white"
-                                target="_blank"
-                            >
-                                ThemeWagon
-                            </Link>
-                        </p>
                     </div>
                 </div>
             </div>
