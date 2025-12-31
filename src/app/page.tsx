@@ -16,11 +16,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <ThumbnailCarousel/>
-      <WorkSpeakers/>
-      <EventTicket/>
       <Highlight/>
+      <EventTicket/>
       <Upcoming/>
+      {/* <ThumbnailCarousel/> */}
+      <WorkSpeakers/>
       <Testimonials/>
       <TicketSection/>
     </main>

@@ -1,18 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import LogoCarousel from '@/components/Home/LogoCarousel';
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden dark:bg-dark">
+    <section className="relative w-full overflow-hidden dark:bg-dark pt-24">
       {/* Video Background with Overlay */}
-      <div className="relative h-screen w-full">
+      <div className="relative w-full" style={{ height: 'calc(100vh - 6rem)' }}>
         <video
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-cover"
+          style={{ objectPosition: 'center' }}
         >
           <source src="/images/hero/home.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -56,6 +58,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <LogoCarousel/>
     </section>
   );
 };

@@ -37,80 +37,51 @@ export const speakers = [
 ];
 
 export const conferences = [
-    {
-        title: "The Conference Construct Millennial",
-        profiles: [
-            "/images/upcoming/profile-1.png",
-            "/images/upcoming/profile-3.png"
-        ],
-        speakers: "Reena John & Lorance",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-1
-    {
-        title: "Local Business Global Event",
-        profiles: [
-            "/images/upcoming/profile-2.png"
-        ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-2
-    {
-        title: "Frontiers Conference Perspectives",
-        profiles: [
-            "/images/upcoming/profile-4.png"
-        ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-3
-    {
-        title: "A Focus Conference Initiatives",
-        profiles: [
-            "/images/upcoming/profile-7.png"
-        ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-4
-    {
-        title: "Science and Beyond",
-        profiles: [
-            "/images/upcoming/profile-6.png",
-            "/images/upcoming/profile-5.png",
-        ],
-        speakers: "Reena John & Lorance",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-5
-    {
-        title: "Global Event",
-        profiles: [
-            "/images/upcoming/profile-2.png"
-        ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-6
-    {
-        title: "Cultural Exchange in the Digital Age",
-        profiles: [
-            "/images/upcoming/profile-4.png"
-        ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-7
-    {
-        title: "Education for Tomorrow",
-        profiles: [
-            "/images/upcoming/profile-7.png"
-        ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
-    }, // Profile-8
+   {
+    title: 'Core Industries',
+    icon: 'Factory',
+    items: [
+      'Manufacturing',
+      'Metals & Foundry',
+      'Cement',
+      'Mining',
+      'Construction',
+      'Power Generating Stations'
+    ]
+  },
+  {
+    title: 'Energy & Infrastructure',
+    icon: 'Fuel',
+    items: [
+      'Oil & Gas',
+      'Petrochemicals',
+      'Solar Panel Manufacturing',
+      'Ports & Logistics',
+      'Smart Cities'
+    ]
+  },
+  {
+    title: 'High-Precision & Regulated Sectors',
+    icon: 'Plane',
+    items: [
+      'Aerospace',
+      'Pharmaceuticals',
+      'Chemical',
+      'Lifescience R&D Centers',
+      'Healthcare'
+    ]
+  },
+  {
+    title: 'Consumer & Process Industries',
+    icon: 'Utensils',
+    items: [
+      'Food & Beverages Manufacturing',
+      'Agriculture',
+      'Gems & Jewellery',
+      'Marine',
+      'Safety & Surveillance'
+    ]
+  }
 ];
 
 export const intermissions = [
