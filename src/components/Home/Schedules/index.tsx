@@ -17,7 +17,7 @@ const Schedules = () => {
               </div>
               <div className="flex items-center flex-wrap gap-30 lg:min-w-96 min-w-max">
                 <div className="flex items-center">
-                  {conference.profiles.map((profile, profileIndex) => (
+                  {/* {conference.profiles.map((profile, profileIndex) => (
                     <Image
                       key={profileIndex}
                       src={profile}
@@ -33,24 +33,24 @@ const Schedules = () => {
                           : ""
                       }`}
                     />
-                  ))}
+                  ))} */}
                 </div>
                 <div>
                   <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80">
                     Speech by
                   </p>
                   <p className="text-lg font-medium text-secondary dark:text-white">
-                    {conference.speakers}
+                    {/* {conference.speakers} */}
                   </p>
                 </div>
               </div>
               <div className="lg:min-w-40 min-w-max" >
-                <Link
+                {/* <Link
                   href={conference.buttonLink}
                   className="btn_outline btn-2 btn_outline hover-outline-slide-down"
                 >
                   <span>{conference.buttonText}</span>
-                </Link>
+                </Link> */}
               </div>
             </div>
 

@@ -8,7 +8,7 @@ import {
   Diamond
 } from 'lucide-react';
 
-const Upcoming = () => {
+const IndustryWeServe = () => {
   return (
     <>
       <section className="upcoming dark:bg-darkmode">
@@ -64,4 +64,4 @@ const Upcoming = () => {
   );
 };
 
-export default Upcoming;
+export default IndustryWeServe;
