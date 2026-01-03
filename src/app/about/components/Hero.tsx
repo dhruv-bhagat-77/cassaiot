@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="relative w-full h-[400px] md:h-[900px] overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/about.jpg"
+          src="/images/hero/about.webp"
           alt="City Skyline"
           fill
           className="object-cover dark:brightness-75"
