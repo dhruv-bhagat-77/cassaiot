@@ -2,10 +2,10 @@ import React from 'react';
 
 const Introduction = () => {
   return (
-    <section className="py-16 px-4 md:px-8 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section className="py-20 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 transition-colors duration-300">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white text-center mb-6">INTRODUCTION TO CASS</h2>
+        <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 transition-all duration-500 border border-gray-100 dark:border-gray-700 hover:shadow-2xl hover:-translate-y-1">
+          <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 text-center mb-8 pb-2 border-b border-gray-200 dark:border-gray-700">INTRODUCTION TO CASS</h2>
           <div className="prose max-w-none dark:prose-invert">
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               At CASS AIOT, we build intelligent machines and software that transform how industries operate.
