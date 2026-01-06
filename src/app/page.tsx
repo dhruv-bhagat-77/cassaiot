@@ -8,6 +8,7 @@ import Highlight from '@/components/Home/YearHighlight/page';
 import IndustryWeServe from '@/components/Home/Upcoming';
 import Testimonials from '@/components/Home/Testimonials';
 import TicketSection from '@/components/Home/TicketSection';
+import LogoCarousel from '@/components/Home/LogoCarousel';
 export const metadata: Metadata = {
   title: "Cassaiot",
 };
@@ -16,13 +17,14 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <LogoCarousel />
       <Highlight/>
       <EventTicket/>
       <IndustryWeServe/>
       {/* <ThumbnailCarousel/> */}
       <WorkSpeakers/>
       <Testimonials/>
-      <TicketSection/>
+      {/* <TicketSection/> */}
     </main>
   )
 }

@@ -5,7 +5,7 @@ import LogoCarousel from '@/components/Home/LogoCarousel';
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden dark:bg-dark pt-24">
+    <section className="relative w-full overflow-hidden dark:bg-dark pt-24 pb-0">
       {/* Video Background with Overlay */}
       <div className="relative w-full" style={{ height: 'calc(100vh - 6rem)' }}>
         <video
@@ -58,7 +58,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <LogoCarousel/>
+      {/* <LogoCarousel/> */}
     </section>
   );
 };

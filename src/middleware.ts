@@ -13,7 +13,8 @@ const publicPaths = [
   '/signin',
   '/signup',
   '/',
-  '/about'
+  '/about',
+  '/products'
 ];
 
 // List of paths that should be directly accessible without any checks

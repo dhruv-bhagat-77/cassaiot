@@ -7,12 +7,15 @@ export const headerData: HeaderItem[] = [
   { label: "About Us", href: "/about" },
   {
     label: "Products",
-    href: "/products",
+    href: "/products"
+  },
+  { 
+    label: "Resources/ Blogs", 
+    href: "/blog",
     submenu: [
       { label: "Blog list", href: "/blog" },
       { label: "Blog details", href: "/blog/blog_1" },
     ],
   },
-  { label: "Resources/ Blogs", href: "/blog" },
   { label: "Contact", href: "/contact" }
 ];  

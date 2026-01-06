@@ -88,7 +88,7 @@ const LogoCarousel = () => {
   }, []);
 
   return (
-    <section className="py-4 bg-primary dark:bg-primary/90 w-full overflow-hidden">
+    <section className="py-4 dark:bg-dark w-full overflow-hidden">
       <div className="w-full">
         <div 
           ref={containerRef}
