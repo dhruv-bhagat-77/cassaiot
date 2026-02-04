@@ -40,8 +40,9 @@ const getSolutionBySlug = async (slug: string) => {
   return solutions[slug as keyof typeof solutions] || null;
 };
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const solution = await getSolutionBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const solution = await getSolutionBySlug(slug);
   
   if (!solution) {
     return {
@@ -66,8 +67,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function SolutionPage({ params }: { params: { slug: string } }) {
-  const solution = await getSolutionBySlug(params.slug);
+export default async function SolutionPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const solution = await getSolutionBySlug(slug);
 
   if (!solution) {
     notFound();
