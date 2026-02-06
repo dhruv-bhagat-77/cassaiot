@@ -3,9 +3,60 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Play, Users, Shield, Zap, BarChart3, Factory, Package, Truck, Cpu, Database, Globe, Award } from 'lucide-react';
 
+// TypeScript interfaces
+interface Problem {
+  title: string;
+  description: string;
+  issues: string[];
+  conclusion: string;
+}
+
+interface Introduction {
+  title: string;
+  technologies: string[];
+  result: string;
+}
+
+interface Mission {
+  mission: string;
+  vision: string;
+}
+
+interface FlowStep {
+  step: string;
+  description: string;
+}
+
+interface Product {
+  id: string;
+  name: string;
+  tagline: string;
+  description: string;
+  image: string;
+  problem: Problem;
+  introduction: Introduction;
+  mission: Mission;
+  solutionModules: string[];
+  usp: string[];
+  flow: FlowStep[];
+  dashboard: string[];
+  integration: string[];
+  whereUsed: string[];
+  industries: string[];
+  whyCassAIOT: string[];
+}
+
+interface CategoryProducts {
+  [key: string]: Product;
+}
+
+interface Products {
+  [key: string]: CategoryProducts;
+}
+
 // Mock product data
-const getProductById = async (slug: string, productId: string): Promise<any> => {
-  const products: any = {
+const getProductById = async (slug: string, productId: string): Promise<Product | null> => {
+  const products: Products = {
     'vision': {
       'cass-vision-flow': {
         id: 'cass-vision-flow',
@@ -124,9 +175,10 @@ const getProductById = async (slug: string, productId: string): Promise<any> => 
     }
   };
 
-  const categoryProducts = products[slug as keyof typeof products];
+  const categoryProducts = products[slug];
   if (!categoryProducts) return null;
-  return categoryProducts[productId as keyof typeof categoryProducts] || null;
+  
+  return categoryProducts[productId] || null;
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string; productId: string }> }) {
@@ -221,7 +273,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                   {product.problem.description}
                 </p>
                 <div className="space-y-3">
-                  {product.problem.issues.map((issue: string, index: number) => (
+                  {product.problem.issues.map((issue, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                       <span className="text-gray-700 dark:text-gray-300">{issue}</span>
@@ -255,7 +307,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                   {product.introduction.title}
                 </p>
                 <div className="space-y-4">
-                  {product.introduction.technologies.map((tech: string, index: number) => (
+                  {product.introduction.technologies.map((tech, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                       <span className="text-gray-700 dark:text-gray-300">{tech}</span>
@@ -322,7 +374,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {product.solutionModules.map((module: string, index: number) => (
+              {product.solutionModules.map((module, index) => (
                 <div key={index} className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg border border-purple-200 dark:border-purple-800">
                   <h4 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">
                     {module}
@@ -348,7 +400,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {product.usp.map((point: string, index: number) => (
+              {product.usp.map((point, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <Award className="w-6 h-6 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-1" />
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -378,7 +430,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </h2>
             </div>
             <div className="space-y-6">
-              {product.flow.map((item: any, index: number) => (
+              {product.flow.map((item, index) => (
                 <div key={index} className="flex items-center space-x-6">
                   <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                     {index + 1}
@@ -415,7 +467,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {product.dashboard.map((feature: string, index: number) => (
+              {product.dashboard.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <BarChart3 className="w-5 h-5 text-green-600 dark:text-green-400" />
                   <span className="text-gray-700 dark:text-gray-300">{feature}</span>
@@ -440,8 +492,8 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {product.integration.data.items.map((item: string, i: number) => (
-                <div key={i} className="flex items-center space-x-3">
+              {product.integration.map((item, index) => (
+                <div key={index} className="flex items-center space-x-3">
                   <Database className="w-5 h-5 text-purple-600 dark:text-purple-400" />
                   <span className="text-gray-700 dark:text-gray-300">{item}</span>
                 </div>
@@ -468,7 +520,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {product.whereUsed.map((location: string, index: number) => (
+              {product.whereUsed.map((location, index) => (
                 <div key={index} className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg flex items-center space-x-3">
                   <Factory className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                   <span className="text-gray-700 dark:text-gray-300">{location}</span>
@@ -493,7 +545,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {product.industries.map((industry: string, index: number) => (
+              {product.industries.map((industry, index) => (
                 <div key={index} className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg border border-green-200 dark:border-green-800">
                   <span className="text-green-800 dark:text-green-200">{industry}</span>
                 </div>
@@ -514,7 +566,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {product.whyCassAIOT.map((reason: string, index: number) => (
+              {product.whyCassAIOT.map((reason, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <Shield className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
