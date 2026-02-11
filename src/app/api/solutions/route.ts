@@ -69,7 +69,6 @@ export async function GET() {
           solutionModules: {
             title: "SOLUTION MODULES",
             subtitle: "Modular. Scalable. Factory-Ready.",
-            icon: "🧩",
             description: "Deploy what you need. Scale when you grow.",
             list: [
               "Raw Material Tracking",
@@ -231,6 +230,21 @@ export async function GET() {
           tagline: "6-Axis Precision Automation",
           description: "Advanced robotic arm for industrial automation and material handling.",
           image: "/images/products/robot-arm.jpg",
+          hero: {
+            title: "CASS Industrial Robot Arm",
+            tagline: "6-Axis Precision Automation",
+            description: "Advanced robotic arm for industrial automation and material handling.",
+            buttons: [
+              {
+                text: "👉 Request Demo",
+                style: "primary"
+              },
+              {
+                text: "👉 Talk to Our Experts", 
+                style: "secondary"
+              }
+            ]
+          },
           problem: {
             title: "Automation Challenges",
             subtitle: "Why Manual Processes Limit Production Efficiency",
@@ -262,19 +276,28 @@ export async function GET() {
             ]
           },
           mission: {
+            title: "MISSION & VISION",
+            icon: "🎯",
+            subtitle: "Empowering manufacturers with intelligent automation",
             mission: "To revolutionize industrial automation through intelligent robotics that enhance human capabilities.",
             vision: "A future where robots handle repetitive tasks while humans focus on innovation and creativity."
           },
-          solutionModules: [
-            "Pick & Place Operations",
-            "Assembly Line Automation",
-            "Quality Inspection",
-            "Packaging & Palletizing",
-            "Machine Tending",
-            "Welding & Cutting",
-            "Material Handling",
-            "Safety Monitoring"
-          ],
+          solutionModules: {
+            title: "ROBOT MODULES",
+            subtitle: "Modular. Scalable. Automation-Ready.",
+            icon: "🤖",
+            description: "Deploy what you need. Scale when you grow.",
+            list: [
+              "Pick & Place Operations",
+              "Assembly Line Automation",
+              "Quality Inspection",
+              "Packaging & Palletizing",
+              "Machine Tending",
+              "Welding & Cutting",
+              "Material Handling",
+              "Safety Monitoring"
+            ]
+          },
           usp: {
             title: "UNIQUE VALUE PROPOSITION",
             subtitle: "Why Our Robots Are Superior",
@@ -299,66 +322,116 @@ export async function GET() {
               text: "This is not just automation.<br />This is intelligent manufacturing."
             }
           },
-          flow: [
-            {
-              step: "Task Programming",
-              description: "Intuitive interface for easy setup"
-            },
-            {
-              step: "Vision Calibration",
-              description: "AI-powered object recognition"
-            },
-            {
-              step: "Automated Operation",
-              description: "Precision execution of tasks"
-            },
-            {
-              step: "Quality Verification",
-              description: "Real-time inspection and feedback"
-            },
-            {
-              step: "Data Integration",
-              description: "Seamless MES/ERP connectivity"
+          flow: {
+            title: "HOW ROBOT AUTOMATION WORKS",
+            subtitle: "End-to-End Automation Flow",
+            icon: "⚙️",
+            stepIcons: ["🎯", "👁️", "🤖", "✅", "🔗"],
+            conclusion: "Every movement is precise, monitored, and optimized.",
+            steps: [
+              {
+                step: "Task Programming",
+                description: "Intuitive interface for easy setup"
+              },
+              {
+                step: "Vision Calibration",
+                description: "AI-powered object recognition"
+              },
+              {
+                step: "Automated Operation",
+                description: "Precision execution of tasks"
+              },
+              {
+                step: "Quality Verification",
+                description: "Real-time inspection and feedback"
+              },
+              {
+                step: "Data Integration",
+                description: "Seamless MES/ERP connectivity"
+              }
+            ]
+          },
+          dashboard: {
+            title: "ROBOT CONTROL DASHBOARD",
+            subtitle: "Complete Automation Management",
+            icon: "📊",
+            features: [
+              { icon: "🤖", text: "Real-time robot status monitoring" },
+              { icon: "📈", text: "Production metrics and analytics" },
+              { icon: "🔧", text: "Maintenance scheduling" },
+              { icon: "⚡", text: "Performance optimization" },
+              { icon: "🛡️", text: "Safety incident tracking" }
+            ],
+            footer: "Accessible on Web, Desktop & Mobile."
+          },
+          integration: {
+            title: "SYSTEM INTEGRATION",
+            subtitle: "Seamless Factory Connectivity",
+            icon: "🔗",
+            features: [
+              { icon: "🏭", text: "MES system integration" },
+              { icon: "💼", text: "ERP connectivity" },
+              { icon: "📡", text: "SCADA system compatibility" },
+              { icon: "🌐", text: "IoT sensor integration" },
+              { icon: "⚙️", text: "Custom API support" }
+            ],
+            footer: "Connect with your existing factory systems."
+          },
+          whereUsed: {
+            title: "WHERE ROBOTS ARE USED",
+            icon: "🏭",
+            list: [
+              "Automotive Assembly",
+              "Electronics Manufacturing",
+              "Food Processing",
+              "Pharmaceutical Production",
+              "Metal Fabrication"
+            ],
+            footer: "From single-cell automation to complete factory integration."
+          },
+          industries: {
+            title: "INDUSTRIES WE SERVE",
+            icon: "🏭",
+            list: [
+              "Automotive",
+              "Electronics",
+              "Food & Beverage",
+              "Pharmaceuticals",
+              "Metal & Machinery",
+              "Plastics",
+              "Textiles",
+              "Chemicals"
+            ]
+          },
+          whyCassAIOT: {
+            title: "WHY CASS AIOT",
+            icon: "🏆",
+            list: [
+              "Industry-leading precision and reliability",
+              "Proven track record in 100+ factories",
+              "Comprehensive training and support",
+              "Customizable solutions for specific needs",
+              "ROI-focused implementation"
+            ],
+            conclusion: {
+              icon: "🏆",
+              text: "We don't just sell robots.<br />We engineer intelligent automation solutions."
             }
-          ],
-          dashboard: [
-            "Real-time robot status monitoring",
-            "Production metrics and analytics",
-            "Maintenance scheduling",
-            "Performance optimization",
-            "Safety incident tracking"
-          ],
-          integration: [
-            "MES system integration",
-            "ERP connectivity",
-            "SCADA system compatibility",
-            "IoT sensor integration",
-            "Custom API support"
-          ],
-          whereUsed: [
-            "Automotive Assembly",
-            "Electronics Manufacturing",
-            "Food Processing",
-            "Pharmaceutical Production",
-            "Metal Fabrication"
-          ],
-          industries: [
-            "Automotive",
-            "Electronics",
-            "Food & Beverage",
-            "Pharmaceuticals",
-            "Metal & Machinery",
-            "Plastics",
-            "Textiles",
-            "Chemicals"
-          ],
-          whyCassAIOT: [
-            "Industry-leading precision and reliability",
-            "Proven track record in 100+ factories",
-            "Comprehensive training and support",
-            "Customizable solutions for specific needs",
-            "ROI-focused implementation"
-          ]
+          },
+          cta: {
+            title: "Ready to automate your production line?",
+            description: "Transform your factory into an intelligent automation operation with CASS Industrial Robot Arm.",
+            buttons: [
+              {
+                text: "👉 Request a Live Demo",
+                style: "primary"
+              },
+              {
+                text: "👉 Schedule a Consultation", 
+                style: "secondary"
+              }
+            ]
+          }
         }
       ]
     }

@@ -14,6 +14,17 @@ import WhyCassSection from '@/components/product/WhyCassSection';
 import CTASection from '@/components/product/CTASection';
 
 // TypeScript interfaces
+
+interface Hero {
+  title: string;
+  tagline: string;
+  description: string;
+  buttons: Array<{
+    text: string;
+    style: string;
+  }>;
+}
+
 interface Problem {
   title: string;
   subtitle: string;
@@ -34,7 +45,6 @@ interface Introduction {
 interface SolutionModules {
   title: string;
   subtitle: string;
-  icon: string;
   description: string;
   list: string[];
 }
@@ -131,7 +141,7 @@ interface Product {
   problem: Problem;
   introduction: Introduction;
   mission: Mission;
-  solutionModules: string[];
+  solutionModules: SolutionModules;
   usp: UVP;
   flow: Flow;
   dashboard: Dashboard;

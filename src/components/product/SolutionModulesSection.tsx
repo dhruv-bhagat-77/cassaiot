@@ -1,7 +1,6 @@
 interface SolutionModules {
   title: string;
   subtitle: string;
-  icon: string;
   description: string;
   list: string[];
 }
